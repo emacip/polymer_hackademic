@@ -1,5 +1,8 @@
 var tabs = document.querySelector('paper-tabs');
 
+/* Add the following code: */
+var list = document.querySelector('post-list');
+
 tabs.addEventListener('core-select', function() {
-  console.log("Selected: " + tabs.selected);
+  list.show = tabs.selected;
 });

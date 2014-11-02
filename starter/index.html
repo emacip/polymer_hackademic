@@ -24,24 +24,35 @@
   <link rel="import"
 	href="../components/paper-tabs/paper-tabs.html">
 
+  <!-- Add the following import: -->
+  <link rel="import" href="post-card.html">
+
 </head>
 
 <body unresolved  fullbleed layout vertical>
 
-<core-header-panel flex>
+  <core-header-panel flex>
 
-  <core-toolbar>
-  <paper-tabs selected="messages" flex>
-    <paper-tab name="messages">Messages</paper-tab>
-    <paper-tab name="favorites">Favorites</paper-tab>
-  </paper-tabs>
+    <core-toolbar>
+    <paper-tabs selected="messages" flex>
+      <paper-tab name="messages">Messages</paper-tab>
+      <paper-tab name="favorites">Favorites</paper-tab>
+    </paper-tabs>
 
-  </core-toolbar>
+    </core-toolbar>
 
-  <!-- main page content will go here -->
+    <!-- main page content will go here -->
 
-</core-header-panel>
+  </core-header-panel>
+  <div class="container" layout vertical center>
+  <post-card>
+    <img width="70" height="70"
+      src="../images/avatar-07.svg">
+    <h2>Another Developer</h2>
+    <p>I'm composing with shadow DOM!</p>
+  </post-card>
 
+</div>
   <script src="app.js"></script>
 </body>
 
